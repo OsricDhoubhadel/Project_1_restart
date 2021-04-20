@@ -1,0 +1,9 @@
+html 
+ head
+  title SURVIVE: A survivor game
+ body 
+  h1 Scene #{scene_Id} 
+  p #{scene_Description} 
+  each option in scene_Option
+    a(href='/scene/'+option.scene) #{option.description}
+    br

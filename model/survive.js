@@ -1,7 +1,7 @@
 const scenes = require('./scenes')
 
 scenes.createScene("intro", 
-`Your home is a nice place with a beautiful greenspace. As you are enjoying your day, you see a wildfire break out. The local authorities announce that all residents need to abandon the village. You have two choices: \n
+`Your home is in a nice country side with a beautiful greenspace. As you are enjoying your day, you see a wildfire break out. The local authorities announce that all residents need to abandon the village. You have two choices:
 `,
 [
     { description: "Be stubborn", scene: "stay"},
@@ -50,7 +50,7 @@ scenes.createScene("pass",
 ])
     
 scenes.createScene("eat_berries", 
-`Those berries were deliious, but after about 15 minutes, you start getting stomach ache. Those berries were poisonous. You have been food poisoned and die a painful death. GAME OVER!!!`)
+`Those berries were delicious, but after about 15 minutes, you start getting stomach ache. They turned out to be poisonous. You have been food poisoned and die a painful death. GAME OVER!!!`)
 
 scenes.createScene("eat_no_berries", 
 `Those berries look poisonous so you pass. You have been hungry and tired for a long time.You die of starvation and exhaustion. GAME OVER!!!`)
@@ -69,4 +69,4 @@ scenes.createScene("consume_medicine",
 `The pain was too much but you risked it anyways. The drug seemed to kill your pain for a while, but slowly you begin to lose your consciousness. You took a high dosage of the drug and have been poisoned by it. You're dead. GAME OVER!!!`)
 
 scenes.createScene("no_medicine", 
-`You were cautious but the pain was too much to handle. You die a very painful death. GAME OVER!!!`)w
+`You were cautious but the pain was too much to handle. You die a very painful death. GAME OVER!!!`)

@@ -1,12 +1,13 @@
 let scenes = {}
 
-function createScene(id, description, options) {
+function createScene(id, description, image, options) {
     if (!options) {
-        options = []
+        options = [{"description": "GAME OVER!!!","scene":"game_over"}]
     }
     scenes[id] = {
         id, 
-        description, 
+        description,
+        image, 
         options
     }
 }

@@ -1,9 +1,21 @@
 html 
  head
   title SURVIVE: A survivor game
+  style. 
+    img{
+        max-width: 30%;
+        height: auto;
+      }
+     body{
+         text-align: center;
+     } 
  body 
-  h1 Scene #{scene_Id} 
-  p #{scene_Description} 
+  h1 Scene: #{scene_Id} 
+  p #{scene_Description}
+  br
+  img(src=scene_Image, alt="")
+  br
+  
   each option in scene_Option
     a(href='/scene/'+option.scene) #{option.description}
     br

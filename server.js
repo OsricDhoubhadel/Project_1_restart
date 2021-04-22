@@ -8,7 +8,7 @@ const port = 3000 || process.env.PORT
 const path = require("path");
 
 app.use(express.static(path.join(__dirname, "images")));
-app.use('/scene', sceneRoutes)
+app.use('/scene', sceneRoutes.counter,sceneRoutes.router)
 
 app.get('/', (req, res) => {
     res.redirect('/scene/intro')

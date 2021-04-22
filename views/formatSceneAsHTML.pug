@@ -12,10 +12,15 @@ html
  body 
   h1 Scene: #{scene_Id} 
   p #{scene_Description}
-  br
-  img(src=scene_Image, alt="")
-  br
-  
   each option in scene_Option
     a(href='/scene/'+option.scene) #{option.description}
     br
+  br
+  br
+  img(src=scene_Image, alt="")
+  br
+  br
+  p You managed to survive #{survive_count} decisions.
+  a(href='/scene/intro' style='text-align: right;') RESTART GAME at any time
+  
+  

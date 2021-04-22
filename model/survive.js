@@ -88,4 +88,4 @@ scenes.createScene("no_medicine",
 
 scenes.createScene("game_over", 
 `Your courage is commendable. But resistance is futile`,
-'/game_over.jpg')
+'/game_over.jpg',[{description: "", scene: ""}])
